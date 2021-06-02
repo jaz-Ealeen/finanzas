@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="397dp"
+        android:layout_height="708dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/nombre_text"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_thin"
+            android:hint="Nombre(s):"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/materno_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_datos" />
+
+        <EditText
+            android:id="@+id/materno_text"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="118dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="127dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_thin"
+            android:hint="Apellido Materno"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/EdadText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/EdadText"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_thin"
+            android:inputType="textPersonName"
+            android:hint="Edad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paterno_text" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="48dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="75dp"
+            android:src="@mipmap/tel"
+            app:layout_constraintBottom_toBottomOf="@+id/password"
+            app:layout_constraintEnd_toStartOf="@+id/telefono"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imagen_email" />
+
+        <ImageView
+            android:id="@+id/imagen_email"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="12dp"
+            android:src="@mipmap/correo"
+            app:layout_constraintBottom_toBottomOf="@+id/email"
+            app:layout_constraintEnd_toStartOf="@+id/id_contacto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/email" />
+
+        <ImageView
+            android:id="@+id/llave"
+            android:layout_width="44dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="10dp"
+            android:src="@mipmap/llave"
+            app:layout_constraintBottom_toBottomOf="@+id/password"
+            app:layout_constraintEnd_toStartOf="@+id/password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/password" />
+
+        <Button
+            android:id="@+id/boton_registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="REGISTRAR"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="4dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_thin"
+            android:inputType="phone"
+            android:hint="Telefono"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="273dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_thin"
+            android:inputType="textEmailAddress"
+            android:hint="Correo Electronico"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagen_email" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="103dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="103dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_thin"
+            android:inputType="textPassword"
+            android:hint="Contrasenia"
+            app:layout_constraintBottom_toBottomOf="@+id/btnregresarregistro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/llave"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <Button
+            android:id="@+id/btnregresarregistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:onClick="Anterior"
+            android:text="regresar"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/id_contacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Información de contacto"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/paterno_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="142dp"
+            android:layout_marginBottom="141dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto_thin"
+            android:hint="Apellido Paterno"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/id_contacto"
+            app:layout_constraintEnd_toEndOf="@+id/EdadText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_datos" />
+
+        <TextView
+            android:id="@+id/id_datos"
+            android:layout_width="193dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="86dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Ingresa tus datos"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
