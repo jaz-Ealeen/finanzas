@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
     tools:context=".Registro">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,11 +14,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513">
 
         <EditText
             android:id="@+id/nombre_text"
-            android:layout_width="0dp"
+            android:layout_width="350dp"
             android:layout_height="46dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
@@ -32,7 +34,7 @@
 
         <EditText
             android:id="@+id/materno_text"
-            android:layout_width="0dp"
+            android:layout_width="350dp"
             android:layout_height="49dp"
             android:layout_marginStart="2dp"
             android:layout_marginTop="118dp"
@@ -49,20 +51,20 @@
 
         <EditText
             android:id="@+id/EdadText"
-            android:layout_width="411dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
             android:layout_marginTop="16dp"
             android:ems="10"
             android:fontFamily="@font/roboto_thin"
-            android:inputType="textPersonName"
             android:hint="Edad"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/paterno_text" />
 
         <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="48dp"
+            android:layout_width="44dp"
             android:layout_height="41dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="75dp"
@@ -75,15 +77,16 @@
 
         <ImageView
             android:id="@+id/imagen_email"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="12dp"
+            android:layout_width="44dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="10dp"
             android:src="@mipmap/correo"
             app:layout_constraintBottom_toBottomOf="@+id/email"
             app:layout_constraintEnd_toStartOf="@+id/id_contacto"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/email" />
+            app:layout_constraintTop_toTopOf="@+id/email"
+            app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
             android:id="@+id/llave"
@@ -110,13 +113,13 @@
 
         <EditText
             android:id="@+id/telefono"
-            android:layout_width="0dp"
+            android:layout_width="300dp"
             android:layout_height="0dp"
-            android:layout_marginEnd="4dp"
+            android:layout_marginEnd="10dp"
             android:ems="10"
             android:fontFamily="@font/roboto_thin"
-            android:inputType="phone"
             android:hint="Telefono"
+            android:inputType="phone"
             app:layout_constraintBottom_toBottomOf="@+id/imageView6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView6"
@@ -124,28 +127,29 @@
 
         <EditText
             android:id="@+id/email"
-            android:layout_width="0dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
             android:layout_marginBottom="273dp"
             android:ems="10"
             android:fontFamily="@font/roboto_thin"
-            android:inputType="textEmailAddress"
             android:hint="Correo Electronico"
+            android:inputType="textEmailAddress"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imagen_email" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="0dp"
+            android:layout_width="300dp"
             android:layout_height="51dp"
             android:layout_marginTop="103dp"
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="103dp"
             android:ems="10"
             android:fontFamily="@font/roboto_thin"
-            android:inputType="textPassword"
             android:hint="Contrasenia"
+            android:inputType="textPassword"
             app:layout_constraintBottom_toBottomOf="@+id/btnregresarregistro"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/llave"
@@ -178,7 +182,7 @@
 
         <EditText
             android:id="@+id/paterno_text"
-            android:layout_width="0dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="142dp"
             android:layout_marginBottom="141dp"
@@ -187,19 +191,20 @@
             android:hint="Apellido Paterno"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="@+id/id_contacto"
-            app:layout_constraintEnd_toEndOf="@+id/EdadText"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/id_datos" />
+            app:layout_constraintTop_toBottomOf="@+id/id_datos"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/id_datos"
             android:layout_width="193dp"
             android:layout_height="36dp"
-            android:layout_marginStart="86dp"
             android:layout_marginTop="6dp"
             android:fontFamily="@font/roboto_bold"
             android:text="Ingresa tus datos"
             android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

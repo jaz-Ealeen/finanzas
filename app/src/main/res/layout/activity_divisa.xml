@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Divisa">
+
+
+    <Button
+        android:id="@+id/btn_div"
+        android:layout_width="148dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#FF5449F5"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/sig"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbdc" />
+
+    <RadioButton
+        android:id="@+id/rbde"
+        android:layout_width="355dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="48dp"
+        android:text="Dolar Estadounidense"
+        app:layout_constraintBottom_toTopOf="@+id/rble"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/res" />
+
+    <RadioButton
+        android:id="@+id/rble"
+        android:layout_width="355dp"
+        android:layout_height="0dp"
+        android:text="Libra Esterlina"
+        app:layout_constraintBottom_toTopOf="@+id/rbpm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbde" />
+
+    <RadioButton
+        android:id="@+id/rby"
+        android:layout_width="355dp"
+        android:layout_height="51dp"
+        android:text="Yen Japónes"
+        app:layout_constraintBottom_toTopOf="@+id/rbde"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rbe"
+        android:layout_width="355dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="48dp"
+        android:text="EURO"
+        app:layout_constraintBottom_toBottomOf="@+id/rble"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rbde" />
+
+    <RadioButton
+        android:id="@+id/rbpm"
+        android:layout_width="355dp"
+        android:layout_height="0dp"
+        android:text="Peso Mexicano"
+        app:layout_constraintBottom_toTopOf="@+id/rbpc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rble" />
+
+    <RadioButton
+        android:id="@+id/rbdc"
+        android:layout_width="355dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="153dp"
+        android:text="Dolar Canadiense"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbfz" />
+
+    <RadioButton
+        android:id="@+id/rbfz"
+        android:layout_width="355dp"
+        android:layout_height="0dp"
+        android:text="Franco Suizo"
+        app:layout_constraintBottom_toTopOf="@+id/rbdc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbs" />
+
+    <RadioButton
+        android:id="@+id/rbs"
+        android:layout_width="355dp"
+        android:layout_height="0dp"
+        android:text="Soles"
+        app:layout_constraintBottom_toTopOf="@+id/rbfz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbpc" />
+
+    <RadioButton
+        android:id="@+id/rbpc"
+        android:layout_width="355dp"
+        android:layout_height="0dp"
+        android:text="Peso Colombiano"
+        app:layout_constraintBottom_toTopOf="@+id/rbs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbpm" />
+
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="154dp"
+        android:text="Divisa seleccionada"
+        app:layout_constraintBottom_toTopOf="@+id/rbde"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/text_div"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rby"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
