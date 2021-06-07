@@ -14,7 +14,7 @@ protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exitosoregistro);
 
-        textView = (TextView)findViewById(R.id.boton_siguientep);
+        textView = findViewById(R.id.boton_siguientep);
 
                 //lo que tenia ealeen
 

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinanzassKEL">
-        <activity android:name=".Balance_General"></activity>
+        <activity android:name=".ingresos"></activity>
+        <activity android:name=".gastos" />
+        <activity android:name=".Balance_General" />
         <activity android:name=".Divisa" />
         <activity android:name=".Ingreso_Succ" />
         <activity android:name=".DatosPerfil" />
